@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    networks:
+      - my_network
+
+  clustereddata:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: clustereddata
+    ports:
+      - "8080:8080"
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge

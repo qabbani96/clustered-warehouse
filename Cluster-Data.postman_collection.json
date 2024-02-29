@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "6f0058d9-c1d3-43de-9bea-6ad5c91a4880",
+		"name": "Cluster-Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30891750"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/deal/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uniqueDealId\":\"85482dd9dssddfsee4jsdf\",\r\n    \"fromCurrency\":\"JOD\",\r\n    \"toCurrency\":\"JOD\",\r\n    \"amount\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/deal/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deal",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/deal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/deal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
